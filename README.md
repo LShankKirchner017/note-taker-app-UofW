@@ -1,4 +1,13 @@
-# note-taker-app-UofW
+# Note Taking APP (WIP 8/21/23)
+
+## Screenshots
+
+## Repository Link
+https://github.com/LShankKirchner017/note-taker-app-UofW
+
+## Deployed Heroku Link
+https://shank-kirchner-note-taker-app-98166b84b6d4.herokuapp.com/
+
 
 ## User Story
 
@@ -26,6 +35,12 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+
+
+## Technology Utilized
+- node.js
+- Heroku
+- Express
 
 ## Resources Used 
 https://dev.to/gulshanaggarwal/npm-packages-to-generate-unique-ids-for-your-next-project-1p3b
