@@ -2,7 +2,7 @@ const router = require("express").Router();
 const path = require("path");
 const fs = require("fs/promises")
 const dbPath = path.join(__dirname, "..", "db", "db.json")
-const { v4: uuidv4 } =require('uuid')
+const nanoid = require('nanoid')
 
 
 // GET route
@@ -23,7 +23,7 @@ router.post("/api/notes", async (req, res) => {
     notes.push({
       title: req.body.title,
       text: req.body.text,
-      id: req.uuidv4()
+      id: req.nanoid()
     })
     await fs.writeFile(dbPath, JSON.stringify(notes))
     res.json(notes)
