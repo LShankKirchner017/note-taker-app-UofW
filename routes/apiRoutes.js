@@ -32,23 +32,5 @@ router.post("/api/notes", async (req, res) => {
   }
 });
 
-// DELETE route
-router.delete("/api/notes/:id", async (req, res) => {
-  try {
-    const notes = JSON.parse(await fs.readFile(dbPath, "utf-8"));
-    const noteIndex = notes.findIndex((note) => note.id === req.params.id);
-    if (noteIndex === -1) {
-      res.status(404).json("No note found");
-      return;
-    } else {
-      notes.splice(noteIndex);
-    }
-    await fs.writeFile(dbPath, JSON.stringify(notes));
-    res.json(notes);
-  } catch (err) {
-    res.status(500).send(err);
-    console.error(err);
-  }
-});
 
 module.exports = router;
