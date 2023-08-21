@@ -23,7 +23,7 @@ router.post("/api/notes", async (req, res) => {
     notes.push({
       title: req.body.title,
       text: req.body.text,
-      id: req.nanoid()
+      id: nanoid()
     })
     await fs.writeFile(dbPath, JSON.stringify(notes))
     res.json(notes)
