@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LShankKirchner017/note-taker-app-UofW#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "uuid": "^9.0.0"
   }
 }
