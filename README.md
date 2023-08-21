@@ -1,6 +1,9 @@
 # Note Taking APP (WIP 8/21/23)
 
 ## Screenshots
+![Landing Page screenshot](<images/landing page screenshot.png>)
+![Notes Page screenshot](<images/notes screenshot.png>)
+
 
 ## Repository Link
 https://github.com/LShankKirchner017/note-taker-app-UofW
