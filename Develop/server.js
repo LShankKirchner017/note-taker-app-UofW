@@ -1,6 +1,6 @@
 const express = require('express')
-const routes = require(/routes/page_routes)
-const apiRoutes = requires(/routes/api_routes)
+const page_routes = require(/routes/page_routes)
+const api_routes = requires(/routes/api_routes)
 const PORT = 3001;
 const app = express();
 
